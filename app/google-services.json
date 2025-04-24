@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968634654557",
+    "project_id": "quize-application-c90be",
+    "storage_bucket": "quize-application-c90be.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968634654557:android:beb6e433ebe23cf02192b4",
+        "android_client_info": {
+          "package_name": "com.example.quiz_rapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI41eJBY5Gfma8_KrmGswXp6mi76IKYsg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

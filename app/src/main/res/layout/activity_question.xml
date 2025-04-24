@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E08331"
+    android:padding="18dp"
+    android:orientation="vertical"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dispNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="1/5"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:layout_gravity="end"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/quitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIT"
+            android:layout_weight="0.8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"/>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#766969"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a simpal question which we will show during the quizz."
+        android:layout_marginTop="35dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_medium"/>
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/answerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/radioBtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:checked="false"
+            android:textSize="20sp"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:checked="false"
+            android:textSize="20sp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="24sp"
+        android:backgroundTint="#0B6B5B"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Score :"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="27sp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/score"
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textStyle="bold"
+                android:textSize="27sp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
