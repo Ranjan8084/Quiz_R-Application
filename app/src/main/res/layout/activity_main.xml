@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B68B6"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/tt"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WEATHER APP"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="300dp"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter City"
+        android:textColorHint="@color/white"
+        android:textColor="#F8E0E0"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/btn_back"
+        android:layout_marginRight="139dp"
+        android:text="SEARCH"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textSize="25sp"
+        android:textColor="#08D7EF"
+        android:textFontWeight="500"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>
+
